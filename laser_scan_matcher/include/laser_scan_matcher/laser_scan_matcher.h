@@ -90,6 +90,7 @@ class LaserScanMatcher
 
     tf::Transform base_to_laser_; // static, cached
     tf::Transform laser_to_base_; // static, cached, calculated from base_to_laser_
+    tf::Transform last_used_odom_tf_, latest_odom_tf_, odom_increment_tf_;
 
     ros::Publisher  pose_publisher_;
     ros::Publisher  pose_stamped_publisher_;
